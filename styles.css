@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 10px;
+}
+
+.video-fondo{
+  position: relative;
+}
+
+video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* pantalla completa */
+  z-index: -1; /* coloca el video detrás del contenido */
+}
+
+.menu{
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  z-index: 1; /* coloca el menú sobre el video */
+}
+
+.menu ul{
+  list-style: none;
+  padding: 0;
+}
+
+.menu li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+p{
+  color: black;
+  font-size: 5rem;
+  font-weight: bolder;
+  margin-left: 130px;
+  text-decoration: underline;
+}
+
+.menu a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.menu a:hover{
+  color: black;
+}

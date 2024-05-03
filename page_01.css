@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  background-color: #4dbd5e;
+}
+
+.title{
+  margin-top: 2.5rem;
+  border: solid 5px red;
+  background-color: #79cd86;
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav{
+  margin-top: 2.5rem;
+  border: solid 5px green;
+  background-color: #79cd86;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.barra_menu{
+  border: solid 2px #bce6c3;
+  border-radius: 2rem;
+  background-color: #bce6c3;
+  width: 100px;
+  text-align: center;
+}
+
+a{
+  /*border: solid 2px blue;*/
+  color: black;
+  text-decoration: none;
+  background-color: #bce6c3;
+  transition: background-color 1s;
+}
+
+a:hover {
+  color: gray;
+}
+
+.container{
+  margin-top: 10rem;
+  font-size: 2rem;
+  display: flex;
+  /*justify-content: space-evenly;
+  overflow: auto; /* añade barras de desplazamiento cuando sea necesario */
+}
+
+.scroll-box{
+  /*flex: 1;
+  width: 25%;
+  height: 50vh;
+  text-align: center;
+  padding: 1em;
+  overflow: auto;*/
+  flex: 1; /* Cada caja de texto ocupará el mismo espacio dentro del contenedor */
+  padding: 1em; /* Espacio interior para que el texto no esté pegado a los bordes */
+  margin: 0 0.5em; /* Espacio entre cada caja de texto */
+  overflow: auto; /* Añade barras de desplazamiento cuando sea necesario */
+  max-width: calc(100% / 3 - 1em); /* Ancho máximo de cada caja */
+  max-height: 350px; /* Altura máxima de cada caja */
+  border: 1px solid #ccc; /* Añade un borde para mayor claridad */
+  box-sizing: border-box; /* Incluye el borde en el cálculo del ancho */
+  word-wrap: break-word; /* Permite que el texto largo se divida en varias líneas */
+}
+
+h3{
+  margin-bottom: 1.5rem;
+}
+
